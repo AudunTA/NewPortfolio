@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { Back, IconsContainer, IconCard } from "./Specific.styled";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+import { Link } from "react-router-dom";
 import {
   WrapperContent,
   ContentContainer,
@@ -45,10 +46,12 @@ function Specific() {
     <WrapperContent>
       <img className="background-pattern" src={backgroundPatterns}></img>
       <ContentContainer>
-        <Back>
-          <KeyboardBackspaceIcon className="back-icon" />
-          <DarkTextBig>All projects</DarkTextBig>
-        </Back>
+        <Link to="/">
+          <Back>
+            <KeyboardBackspaceIcon className="back-icon" />
+            <DarkTextBig>All projects</DarkTextBig>
+          </Back>
+        </Link>
         <InfoContainer>
           <TextHeading>{object.title}</TextHeading>
         </InfoContainer>
