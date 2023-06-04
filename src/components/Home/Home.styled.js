@@ -45,11 +45,21 @@ const ContentContainer = styled.div`
     padding-bottom: 15px;
     max-width: 480px;
   }
+  .short-paragraph-two {
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
   .long-description {
     margin-top: 50px;
     margin-bottom: 50px;
     font-weight: 400;
     font-size: 18px;
+  }
+  .full-width-img {
+    max-width: 300px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    object-fit: cover;
   }
 `;
 const InfoContainer = styled.div`
@@ -60,6 +70,8 @@ const ButtonContainer = styled.div`
   margin-bottom: 50px;
   .btn_two {
     margin-left: 15px;
+  }
+  .btn_one {
   }
 `;
 

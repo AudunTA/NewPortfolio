@@ -46,7 +46,7 @@ function Specific() {
     <WrapperContent>
       <img className="background-pattern" src={backgroundPatterns}></img>
       <ContentContainer>
-        <Link to="/">
+        <Link to="/Projects">
           <Back>
             <KeyboardBackspaceIcon className="back-icon" />
             <DarkTextBig>All projects</DarkTextBig>
