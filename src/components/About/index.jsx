@@ -46,14 +46,21 @@ function About() {
           </TextWhite>
         </InfoContainer>
         <ButtonContainer>
-          <IconButton className="btn_one">
-            <LinkedInIcon className="btn-icon" />
-            LinkedIn
-          </IconButton>
-          <IconButton className="btn_two">
-            <GitHubIcon className="btn-icon" />
-            GitHub
-          </IconButton>
+          <a
+            href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
+            target="_blank"
+          >
+            <IconButton className="btn_one">
+              <LinkedInIcon className="btn-icon" />
+              LinkedIn
+            </IconButton>
+          </a>
+          <a href="https://github.com/AudunTA" target="_blank">
+            <IconButton className="btn_two">
+              <GitHubIcon className="btn-icon" />
+              GitHub
+            </IconButton>
+          </a>
         </ButtonContainer>
         <img src={image} className="full-width-img" />
         <TextSubHeading className="sub-heading">Education</TextSubHeading>

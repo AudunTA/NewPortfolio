@@ -35,7 +35,10 @@ export const data = [
         name: "javaScript",
       },
     ],
+    liveSite: "https://whimsical-alpaca-698d0e.netlify.app/",
+    gitHub: "https://github.com/AudunTA/Holidaze",
   },
+
   {
     id: 2,
     title: "ReactoTech",
@@ -51,6 +54,8 @@ export const data = [
         name: "javaScript",
       },
     ],
+    liveSite: "https://audunta.github.io/ReactoTech/",
+    gitHub: "https://github.com/AudunTA/ReactoTech",
   },
   {
     id: 3,
@@ -73,6 +78,8 @@ export const data = [
         name: "bootstrap",
       },
     ],
+    liveSite: "https://audunta.github.io/SemesterAssignment_Auctionhouse/",
+    gitHub: "https://github.com/AudunTA/SemesterAssignment_Auctionhouse",
   },
   {
     id: 4,
@@ -89,5 +96,7 @@ export const data = [
         name: "css",
       },
     ],
+    liveSite: "https://admirable-parfait-746c8d.netlify.app/",
+    gitHub: "https://github.com/AudunTA/ATH",
   },
 ];

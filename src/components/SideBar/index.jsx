@@ -7,6 +7,7 @@ import {
   ExternalLink,
   AboutSection,
   MenuToggle,
+  BackGroundFade,
 } from "./SideBar.styled";
 //icons
 import MenuIcon from "@mui/icons-material/Menu";
@@ -20,23 +21,37 @@ import { NavText, NavSmallText, NavTextWhite } from "../../styles/Text.styles";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import image from "../../assets/images/meg.jpg";
+import { useState } from "react";
+import { Page } from "./SideBar.styled";
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
 `;
 function SideBar() {
+  const [showMenu, setShowMenu] = useState(false);
   const handleShowMenu = () => {
-    console.log("Test");
+    console.log("click");
+    setShowMenu(!showMenu);
+  };
+  const handleModal = () => {
+    setShowMenu(false);
   };
   return (
-    <>
-      <SideBarContainer>
+    <Page>
+      <BackGroundFade
+        className={showMenu ? "bg-show" : "bg-hidden"}
+        onClick={handleModal}
+      />
+      <SideBarContainer className={showMenu ? "show" : "hidden"}>
         <AboutSection>
           <img id="img_avatar" src={image}></img>
           <div className="group-info">
             <NavTextWhite>Audun T. Anderssen</NavTextWhite>
             <NavText>Front-end Developer</NavText>
           </div>
-          <MenuToggle onClick={handleShowMenu}>
+          <MenuToggle
+            onClick={handleShowMenu}
+            className={showMenu ? "mn-show" : "mn-hidden"}
+          >
             <MenuIcon className="menu-icon" />
           </MenuToggle>
         </AboutSection>
@@ -87,7 +102,7 @@ function SideBar() {
           </ExternalLink>
         </a>
       </SideBarContainer>
-    </>
+    </Page>
   );
 }
 

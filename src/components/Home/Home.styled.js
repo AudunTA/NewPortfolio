@@ -12,6 +12,9 @@ const WrapperContent = styled.div`
     opacity: 0.3;
     z-index: 1;
   }
+  a {
+    text-decoration: none;
+  }
   .background-pattern-bright {
     position: absolute;
     max-width: 1250px;
@@ -60,6 +63,7 @@ const ContentContainer = styled.div`
     border: 1px solid var(--border-color);
     border-radius: 6px;
     object-fit: cover;
+    margin-bottom: 50px;
   }
 `;
 const InfoContainer = styled.div`

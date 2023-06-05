@@ -1,15 +1,44 @@
 import styled from "styled-components";
-
+const Page = styled.div`
+  transition: 0.3s;
+  .mn-show {
+    display: none;
+  }
+  .bg-show {
+    @media only screen and (min-width: 1150px) {
+      display: none;
+    }
+  }
+  .bg-hidden {
+    display: none;
+  }
+  .show {
+    transition: 0.3s;
+    margin-left: 250px;
+    @media only screen and (min-width: 1150px) {
+      transition: 0ms;
+      margin-left: 0;
+    }
+  }
+  .hidden {
+    transition: 0.3s;
+    margin-left: 0px;
+  }
+`;
 const SideBarContainer = styled.div`
   @media only screen and (max-width: 1150px) {
     left: -260px;
+    margin-left: 0;
+  }
+  @media only screen and (min-width: 1150px) {
   }
   position: fixed;
   background-color: var(--dark-100);
   border-right: 1px solid var(--border-color);
   height: 100vh;
-  transition: 1.15s;
+  transition: 0.3s;
   z-index: 99;
+
   .nav-icon {
     color: var(--text-color-100);
     font-size: 17px;
@@ -91,6 +120,9 @@ const AboutSection = styled.div`
   }
 `;
 const MenuToggle = styled.div`
+  @media only screen and (min-width: 1150px) {
+    display: none;
+  }
   position: relative;
   background-color: var(--dark-100);
   border-right: 1px solid var(--border-color);
@@ -104,6 +136,16 @@ const MenuToggle = styled.div`
     padding: 5px;
   }
 `;
+
+const BackGroundFade = styled.div`
+  position: fixed;
+  transition: 0.2s;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 4;
+`;
 export {
   SideBarContainer,
   NavItemGroup,
@@ -111,4 +153,6 @@ export {
   ExternalLink,
   AboutSection,
   MenuToggle,
+  Page,
+  BackGroundFade,
 };

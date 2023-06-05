@@ -56,11 +56,15 @@ function Specific() {
           <TextHeading>{object.title}</TextHeading>
         </InfoContainer>
         <ButtonContainer>
-          <PrimaryButton>Live Link</PrimaryButton>
-          <IconButton className="btn_two">
-            <GitHubIcon className="btn-icon" />
-            GitHub repository
-          </IconButton>
+          <a href={object.liveSite} target="_blank">
+            <PrimaryButton>Live Link</PrimaryButton>
+          </a>
+          <a href={object.gitHub} target="_blank">
+            <IconButton className="btn_two">
+              <GitHubIcon className="btn-icon" />
+              GitHub repository
+            </IconButton>
+          </a>
         </ButtonContainer>
         <img className="project-image" src={object.src} />
 
