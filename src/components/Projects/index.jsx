@@ -9,7 +9,8 @@ import { CardGridContainerTwo } from "../../styles/Layout.styles";
 import Cards from "../Cards";
 import { data } from "../../data";
 import backgroundPatterns from "../../assets/images/backgroundpatterns.png";
-
+//tilt effect
+import Tilt from "react-parallax-tilt";
 function Projects() {
   return (
     <WrapperContent>
@@ -26,13 +27,22 @@ function Projects() {
         <CardGridContainerTwo>
           {data.map((ele) => {
             return (
-              <Cards
-                key={ele.id}
-                id={ele.id}
-                title={ele.title}
-                desc={ele.shortDescription}
-                src={ele.src}
-              />
+              <Tilt
+                tiltEnable={false}
+                glareEnable={true}
+                glareMaxOpacity={0.2}
+                glareColor="lightblue"
+                glarePosition="all"
+                className="card-glow-effect"
+              >
+                <Cards
+                  key={ele.id}
+                  id={ele.id}
+                  title={ele.title}
+                  desc={ele.shortDescription}
+                  src={ele.src}
+                />
+              </Tilt>
             );
           })}
         </CardGridContainerTwo>
