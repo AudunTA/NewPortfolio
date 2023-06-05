@@ -31,6 +31,9 @@ import Tilt from "react-parallax-tilt";
 
 import { FaReact } from "react-icons/fa";
 import JavascriptIcon from "@mui/icons-material/Javascript";
+import { SiStyledcomponents } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { SiMui } from "react-icons/si";
 function Home() {
   return (
     <WrapperContent>
@@ -69,6 +72,7 @@ function Home() {
             );
           })}
         </CardGridContainer>
+        <TextSubHeading className="sub-heading">Skills</TextSubHeading>
         <SkillsContainer>
           <Tilt
             tiltEnable={false}
@@ -85,7 +89,7 @@ function Home() {
               <div className="content-skills-card">
                 <TextSkillsWhite>React</TextSkillsWhite>
                 <TextSkillsDark>
-                  Framework I use to build applications
+                  Framework I use to build applications.
                 </TextSkillsDark>
               </div>
             </SkillsCard>
@@ -106,7 +110,68 @@ function Home() {
                 <TextSkillsWhite>JavaScript</TextSkillsWhite>
                 <TextSkillsDark>
                   My most comfortable programming language, im currently
-                  learning TypeScript
+                  learning TypeScript.
+                </TextSkillsDark>
+              </div>
+            </SkillsCard>
+          </Tilt>
+          <Tilt
+            tiltEnable={false}
+            glareEnable={true}
+            glareMaxOpacity={0.2}
+            glareColor="lightblue"
+            glarePosition="all"
+            className="tilt-effect"
+          >
+            <SkillsCard>
+              <div className="icon-container">
+                <SiStyledcomponents className="skills-icon" />
+              </div>
+              <div className="content-skills-card">
+                <TextSkillsWhite>Styled components</TextSkillsWhite>
+                <TextSkillsDark>
+                  My most used styling library for React.
+                </TextSkillsDark>
+              </div>
+            </SkillsCard>
+          </Tilt>
+          <Tilt
+            tiltEnable={false}
+            glareEnable={true}
+            glareMaxOpacity={0.2}
+            glareColor="lightblue"
+            glarePosition="all"
+            className="tilt-effect"
+          >
+            <SkillsCard>
+              <div className="icon-container">
+                <FaFigma className="skills-icon" />
+              </div>
+              <div className="content-skills-card">
+                <TextSkillsWhite>Figma</TextSkillsWhite>
+                <TextSkillsDark>
+                  Design tool i use to create and make prototypes of my
+                  applications.
+                </TextSkillsDark>
+              </div>
+            </SkillsCard>
+          </Tilt>
+          <Tilt
+            tiltEnable={false}
+            glareEnable={true}
+            glareMaxOpacity={0.2}
+            glareColor="lightblue"
+            glarePosition="all"
+            className="tilt-effect"
+          >
+            <SkillsCard>
+              <div className="icon-container">
+                <SiMui className="skills-icon" />
+              </div>
+              <div className="content-skills-card">
+                <TextSkillsWhite>MUI</TextSkillsWhite>
+                <TextSkillsDark>
+                  MUI provides simple and customizable React components.
                 </TextSkillsDark>
               </div>
             </SkillsCard>
