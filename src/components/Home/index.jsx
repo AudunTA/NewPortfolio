@@ -28,7 +28,7 @@ import { Link } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
 
 //icons
-
+import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import JavascriptIcon from "@mui/icons-material/Javascript";
 import { SiStyledcomponents } from "react-icons/si";
@@ -190,6 +190,27 @@ function Home() {
                 <TextSkillsWhite>MUI</TextSkillsWhite>
                 <TextSkillsDark>
                   MUI provides simple and customizable React components.
+                </TextSkillsDark>
+              </div>
+            </SkillsCard>
+          </Tilt>
+          <Tilt
+            perspective={1000}
+            scale={1.02}
+            glareEnable={true}
+            glareMaxOpacity={0.2}
+            glareColor="lightblue"
+            glarePosition="all"
+            className="tilt-effect"
+          >
+            <SkillsCard>
+              <div className="icon-container">
+                <FaBootstrap className="skills-icon" />
+              </div>
+              <div className="content-skills-card">
+                <TextSkillsWhite>BootStrap</TextSkillsWhite>
+                <TextSkillsDark>
+                  CSS framwork for easy and fast development
                 </TextSkillsDark>
               </div>
             </SkillsCard>

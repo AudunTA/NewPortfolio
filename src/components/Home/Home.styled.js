@@ -66,6 +66,9 @@ const ContentContainer = styled.div`
     object-fit: cover;
     margin-top: 50px;
   }
+  .margin-top {
+    margin-top: 15px;
+  }
 `;
 const InfoContainer = styled.div`
   margin-bottom: 15px;
