@@ -27,6 +27,9 @@ const CardGridContainerTwo = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   grid-gap: 25px;
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 const FlexCol = styled.div`
   display: flex;

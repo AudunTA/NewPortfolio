@@ -18,8 +18,7 @@ import { PrimaryButton, IconButton } from "../../styles/Button.styles";
 import { featuredData } from "../../data";
 
 import backgroundPatterns from "../../assets/images/backgroundpatternsdark.png";
-import Footer from "../Footer";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <WrapperContent>
@@ -34,11 +33,15 @@ function Home() {
           </TextWhite>
         </InfoContainer>
         <ButtonContainer>
-          <PrimaryButton>About me</PrimaryButton>
-          <IconButton className="btn_two">
-            <CasesOutlinedIcon className="btn-icon" />
-            All projects
-          </IconButton>
+          <Link to="/About">
+            <PrimaryButton>About me</PrimaryButton>
+          </Link>
+          <Link to="/Projects">
+            <IconButton className="btn_two">
+              <CasesOutlinedIcon className="btn-icon" />
+              All projects
+            </IconButton>
+          </Link>
         </ButtonContainer>
         <TextSubHeading className="sub-heading">Featured work</TextSubHeading>
         <CardGridContainer>
