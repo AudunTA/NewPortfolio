@@ -124,6 +124,8 @@ const MenuToggle = styled.div`
     display: none;
   }
   position: relative;
+  display: flex;
+  align-items: center;
   background-color: var(--dark-100);
   border-right: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);

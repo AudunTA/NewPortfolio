@@ -79,6 +79,23 @@ const FooterTextWhite = styled.p`
   font-family: interRegular;
   text-decoration: none;
 `;
+
+const TextSkillsWhite = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--almost-white);
+  line-height: 24px;
+  font-family: interRegular;
+  text-decoration: none;
+`;
+const TextSkillsDark = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-100);
+  line-height: 24px;
+  font-family: interRegular;
+  text-decoration: none;
+`;
 export {
   NavText,
   NavSmallText,
@@ -90,4 +107,6 @@ export {
   TextSubHeading,
   FooterTextWhite,
   FooterTextDark,
+  TextSkillsWhite,
+  TextSkillsDark,
 };

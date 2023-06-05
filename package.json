@@ -16,6 +16,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
+    "react-mouse-position": "^1.0.0",
+    "react-parallax-tilt": "^1.7.144",
     "react-router-dom": "^6.11.2",
     "styled-components": "^5.3.11"
   },

@@ -4,11 +4,15 @@ import {
   InfoContainer,
   WrapperContent,
   ButtonContainer,
+  SkillsContainer,
+  SkillsCard,
 } from "./Home.styled";
 import {
   TextHeading,
   TextWhite,
   TextSubHeading,
+  TextSkillsWhite,
+  TextSkillsDark,
 } from "../../styles/Text.styles";
 import { CardGridContainer } from "../../styles/Layout.styles";
 import CasesOutlinedIcon from "@mui/icons-material/CasesOutlined";
@@ -19,6 +23,14 @@ import { featuredData } from "../../data";
 
 import backgroundPatterns from "../../assets/images/backgroundpatternsdark.png";
 import { Link } from "react-router-dom";
+
+//tilt effect
+import Tilt from "react-parallax-tilt";
+
+//icons
+
+import { FaReact } from "react-icons/fa";
+import JavascriptIcon from "@mui/icons-material/Javascript";
 function Home() {
   return (
     <WrapperContent>
@@ -57,6 +69,49 @@ function Home() {
             );
           })}
         </CardGridContainer>
+        <SkillsContainer>
+          <Tilt
+            tiltEnable={false}
+            glareEnable={true}
+            glareMaxOpacity={0.2}
+            glareColor="lightblue"
+            glarePosition="all"
+            className="tilt-effect"
+          >
+            <SkillsCard>
+              <div className="icon-container">
+                <FaReact className="skills-icon" />
+              </div>
+              <div className="content-skills-card">
+                <TextSkillsWhite>React</TextSkillsWhite>
+                <TextSkillsDark>
+                  Framework I use to build applications
+                </TextSkillsDark>
+              </div>
+            </SkillsCard>
+          </Tilt>
+          <Tilt
+            tiltEnable={false}
+            glareEnable={true}
+            glareMaxOpacity={0.2}
+            glareColor="lightblue"
+            glarePosition="all"
+            className="tilt-effect"
+          >
+            <SkillsCard>
+              <div className="icon-container">
+                <JavascriptIcon className="skills-icon-small" />
+              </div>
+              <div className="content-skills-card">
+                <TextSkillsWhite>JavaScript</TextSkillsWhite>
+                <TextSkillsDark>
+                  My most comfortable programming language, im currently
+                  learning TypeScript
+                </TextSkillsDark>
+              </div>
+            </SkillsCard>
+          </Tilt>
+        </SkillsContainer>
       </ContentContainer>
     </WrapperContent>
   );
