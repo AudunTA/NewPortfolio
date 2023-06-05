@@ -84,7 +84,6 @@ function Home() {
         <TextSubHeading className="sub-heading">Skills</TextSubHeading>
         <SkillsContainer>
           <Tilt
-            tiltEnable={false}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -104,7 +103,6 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
-            tiltEnable={false}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -125,7 +123,6 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
-            tiltEnable={false}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -145,7 +142,6 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
-            tiltEnable={false}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -166,7 +162,6 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
-            tiltEnable={false}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
