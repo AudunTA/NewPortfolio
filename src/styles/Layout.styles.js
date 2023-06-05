@@ -20,6 +20,18 @@ const CardGridContainer = styled.div`
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
   }
+  .card-glow-effect {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background-color: var(--dark-100);
+    :hover {
+      .card-img {
+        scale: 1.03;
+        overflow: hidden;
+      }
+    }
+  }
 `;
 const CardGridContainerTwo = styled.div`
   margin-top: 15px;

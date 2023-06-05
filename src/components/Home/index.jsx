@@ -62,13 +62,22 @@ function Home() {
         <CardGridContainer>
           {featuredData.map((ele) => {
             return (
-              <Cards
-                key={ele.id}
-                id={ele.id}
-                title={ele.title}
-                desc={ele.shortDescription}
-                src={ele.src}
-              ></Cards>
+              <Tilt
+                tiltEnable={false}
+                glareEnable={true}
+                glareMaxOpacity={0.2}
+                glareColor="lightblue"
+                glarePosition="all"
+                className="card-glow-effect"
+              >
+                <Cards
+                  key={ele.id}
+                  id={ele.id}
+                  title={ele.title}
+                  desc={ele.shortDescription}
+                  src={ele.src}
+                ></Cards>
+              </Tilt>
             );
           })}
         </CardGridContainer>

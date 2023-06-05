@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 const Card = styled.div`
+  padding: 15px;
   .card-text {
     margin-top: 15px;
   }
 
   .card-img {
     width: 100%;
-    max-height: 248px;
+    max-height: 225px;
     object-fit: cover;
     border-radius: 6px;
     opacity: 1;

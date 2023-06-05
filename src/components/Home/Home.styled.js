@@ -27,7 +27,6 @@ const WrapperContent = styled.div`
   .project-image {
     margin-top: 50px;
     width: 100%;
-    min-height: 220px;
     object-fit: cover;
     border-radius: 6px;
     opacity: 1;
