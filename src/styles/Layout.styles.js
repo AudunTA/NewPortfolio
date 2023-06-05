@@ -20,17 +20,11 @@ const CardGridContainer = styled.div`
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card-glow-effect {
-    border-radius: 6px;
+  .tilt-effect-project {
     overflow: hidden;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    background-color: var(--dark-100);
-    :hover {
-      .card-img {
-        scale: 1.03;
-        overflow: hidden;
-      }
-    }
+    background-color: var(--dark-400);
   }
 `;
 const CardGridContainerTwo = styled.div`
@@ -42,17 +36,11 @@ const CardGridContainerTwo = styled.div`
   @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card-glow-effect {
-    border-radius: 6px;
+  .tilt-effect-project {
     overflow: hidden;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    background-color: var(--dark-100);
-    :hover {
-      .card-img {
-        scale: 1.03;
-        overflow: hidden;
-      }
-    }
+    background-color: var(--dark-400);
   }
 `;
 const FlexCol = styled.div`

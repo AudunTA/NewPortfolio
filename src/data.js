@@ -15,7 +15,7 @@ export const featuredData = [
     id: 2,
     title: "ReactoTech",
     src: reactoTechImage,
-    shortDescription: "This is holidaze",
+    shortDescription: "a mock ecommerce store",
   },
 ];
 

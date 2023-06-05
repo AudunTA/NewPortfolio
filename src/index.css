@@ -1,6 +1,7 @@
 :root {
   --dark-100: #1f1f1f;
   --dark-300: #141414;
+  --dark-400: rgba(138, 138, 138, 0.1);
   --almost-black: #161616;
   --dark-highlight: #292929;
   --almost-white: #f2f2f2;

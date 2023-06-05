@@ -11,6 +11,7 @@ import { data } from "../../data";
 import backgroundPatterns from "../../assets/images/backgroundpatterns.png";
 //tilt effect
 import Tilt from "react-parallax-tilt";
+
 function Projects() {
   return (
     <WrapperContent>
@@ -28,12 +29,14 @@ function Projects() {
           {data.map((ele) => {
             return (
               <Tilt
+                key={ele.id}
                 tiltEnable={false}
+                scale={1.02}
                 glareEnable={true}
-                glareMaxOpacity={0.2}
+                glareMaxOpacity={0.3}
                 glareColor="lightblue"
                 glarePosition="all"
-                className="card-glow-effect"
+                className="tilt-effect-project"
               >
                 <Cards
                   key={ele.id}

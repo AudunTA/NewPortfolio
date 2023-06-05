@@ -34,6 +34,9 @@ import JavascriptIcon from "@mui/icons-material/Javascript";
 import { SiStyledcomponents } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { SiMui } from "react-icons/si";
+
+import { useState } from "react";
+
 function Home() {
   return (
     <WrapperContent>
@@ -64,11 +67,12 @@ function Home() {
             return (
               <Tilt
                 tiltEnable={false}
+                scale={1.02}
                 glareEnable={true}
                 glareMaxOpacity={0.2}
                 glareColor="lightblue"
                 glarePosition="all"
-                className="card-glow-effect"
+                className="tilt-effect-project"
               >
                 <Cards
                   key={ele.id}
@@ -84,6 +88,8 @@ function Home() {
         <TextSubHeading className="sub-heading">Skills</TextSubHeading>
         <SkillsContainer>
           <Tilt
+            perspective={1000}
+            scale={1.02}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -103,6 +109,8 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
+            perspective={1000}
+            scale={1.02}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -123,6 +131,8 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
+            perspective={1000}
+            scale={1.02}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -142,6 +152,8 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
+            perspective={1000}
+            scale={1.02}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
@@ -162,6 +174,8 @@ function Home() {
             </SkillsCard>
           </Tilt>
           <Tilt
+            perspective={1000}
+            scale={1.02}
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareColor="lightblue"
