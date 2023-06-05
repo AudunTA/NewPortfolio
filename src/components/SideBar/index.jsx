@@ -6,8 +6,10 @@ import {
   LinkContainer,
   ExternalLink,
   AboutSection,
+  MenuToggle,
 } from "./SideBar.styled";
 //icons
+import MenuIcon from "@mui/icons-material/Menu";
 import { WorkOutline } from "@mui/icons-material";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
@@ -22,6 +24,9 @@ const StyledNavLink = styled(NavLink)`
   text-decoration: none;
 `;
 function SideBar() {
+  const handleShowMenu = () => {
+    console.log("Test");
+  };
   return (
     <>
       <SideBarContainer>
@@ -31,6 +36,9 @@ function SideBar() {
             <NavTextWhite>Audun T. Anderssen</NavTextWhite>
             <NavText>Front-end Developer</NavText>
           </div>
+          <MenuToggle onClick={handleShowMenu}>
+            <MenuIcon className="menu-icon" />
+          </MenuToggle>
         </AboutSection>
         <StyledNavLink to="/" activeclassname="active" className="navGroup">
           <ExploreOutlinedIcon className="nav-icon" />

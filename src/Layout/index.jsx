@@ -5,16 +5,20 @@ import SideBar from "../components/SideBar";
 import { UnderSideBar } from "../styles/Layout.styles";
 import Footer from "../components/Footer";
 import { FlexCol } from "../styles/Layout.styles";
+import Header from "../components/Header";
 function Layout() {
   return (
-    <FlexContainer>
-      <SideBar />
-      <UnderSideBar />
-      <FlexCol>
-        <Outlet />
-        <Footer />
-      </FlexCol>
-    </FlexContainer>
+    <>
+      <Header />
+      <FlexContainer>
+        <SideBar />
+        <UnderSideBar />
+        <FlexCol>
+          <Outlet />
+          <Footer />
+        </FlexCol>
+      </FlexContainer>
+    </>
   );
 }
 

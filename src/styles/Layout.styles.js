@@ -7,6 +7,9 @@ const FlexContainer = styled.div`
 const UnderSideBar = styled.div`
   min-width: 245px;
   height: 20px;
+  @media only screen and (max-width: 1150px) {
+    display: none;
+  }
 `;
 const CardGridContainer = styled.div`
   margin-top: 15px;
