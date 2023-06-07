@@ -37,7 +37,7 @@ import { SiMui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
+import Education from "../Education";
 function About() {
   return (
     <WrapperContent>
@@ -78,12 +78,8 @@ function About() {
         </ButtonContainer>
         <img src={image} className="full-width-img" />
         <TextSubHeading className="sub-heading">Education</TextSubHeading>
-        <DarkTextBig>
-          Bachelor IT and informationssystems at USN, Ringeriket.
-        </DarkTextBig>
-        <DarkTextBig>
-          2 years higher degree Front-end development at Noroff, Kristiansand.
-        </DarkTextBig>
+
+        <Education />
         <TextSubHeading className="sub-heading">
           My Strongest skills
         </TextSubHeading>
