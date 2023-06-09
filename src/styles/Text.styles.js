@@ -31,6 +31,9 @@ const TextHeading = styled.h1`
   font-size: 48px;
   font-weight: 600;
   color: var(--almost-white);
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
 `;
 const TextSubHeading = styled.h1`
   font-family: interBold;

@@ -13,13 +13,17 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
+    "animate.css": "^4.1.1",
+    "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
+    "react-animate-on-scroll": "^2.1.7",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-mouse-position": "^1.0.0",
     "react-parallax-tilt": "^1.7.144",
     "react-router-dom": "^6.11.2",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "vite-plugin-svgr": "^3.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

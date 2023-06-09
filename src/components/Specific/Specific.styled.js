@@ -3,6 +3,10 @@ import styled from "styled-components";
 const Back = styled.div`
   position: absolute;
   top: 100px;
+  @media (max-width: 800px) {
+    top: 40px;
+    left: 60px;
+  }
   display: flex;
   align-items: center;
   .back-icon {

@@ -38,7 +38,15 @@ import { FaBootstrap } from "react-icons/fa";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Education from "../Education";
+//animate on scroll
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function About() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <WrapperContent>
       <img className="background-pattern" src={backgroundPatterns}></img>
@@ -49,7 +57,7 @@ function About() {
             <DarkTextBig>Back Home</DarkTextBig>
           </Back>
         </Link>
-        <InfoContainer>
+        <InfoContainer data-aos="fade-right">
           <TextHeading>About Me</TextHeading>
           <TextWhite className="short-paragraph-two">
             My Name is Audun Thompson Anderssen. Im 26 years old and as of june
@@ -64,19 +72,22 @@ function About() {
             href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
             target="_blank"
           >
-            <IconButton className="btn_one">
+            <IconButton className="btn_one" data-aos="fade-right">
               <LinkedInIcon className="btn-icon" />
               LinkedIn
             </IconButton>
           </a>
           <a href="https://github.com/AudunTA" target="_blank">
-            <IconButton className="btn_two">
+            <IconButton className="btn_two" data-aos="fade-left">
               <GitHubIcon className="btn-icon" />
               GitHub
             </IconButton>
           </a>
         </ButtonContainer>
-        <img src={image} className="full-width-img" />
+        <div className="img-container-me" data-aos="fade">
+          <img src={image} className="full-width-img" />
+        </div>
+
         <TextSubHeading className="sub-heading">Education</TextSubHeading>
 
         <Education />

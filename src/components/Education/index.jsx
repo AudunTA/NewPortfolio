@@ -11,7 +11,13 @@ import {
 } from "../../styles/Text.styles";
 import { MdSchool } from "react-icons/md";
 import Tilt from "react-parallax-tilt";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Education() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <EducationContainer>
       <Tilt
@@ -22,8 +28,9 @@ function Education() {
         glareColor="lightblue"
         glarePosition="all"
         className="tilt-effect-project"
+        data-aos="fade-down"
       >
-        <EductationContent>
+        <EductationContent data-aos="fade-left">
           <ContentWrapper>
             <div className="icon-container">
               <MdSchool className="skills-icon" />
@@ -46,7 +53,7 @@ function Education() {
         glarePosition="all"
         className="tilt-effect-project"
       >
-        <EductationContent>
+        <EductationContent data-aos="fade-right">
           <ContentWrapper>
             <div className="icon-container">
               <MdSchool className="skills-icon" />

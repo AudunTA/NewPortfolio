@@ -36,55 +36,46 @@ import { FaFigma } from "react-icons/fa";
 import { SiMui } from "react-icons/si";
 
 import { useState } from "react";
+import FeatureCard from "../FeatureCard";
+//animate on scroll
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <WrapperContent>
       <img className="background-pattern" src={backgroundPatterns}></img>
       <ContentContainer>
         <InfoContainer>
-          <TextHeading>Hey, I'm Audun.</TextHeading>
-          <TextHeading>Im a front-end developer.</TextHeading>
-          <TextWhite className="short-paragraph">
+          <TextHeading data-aos="fade-down">Hey, I'm Audun.</TextHeading>
+          <TextHeading data-aos="fade-right">
+            Im a front-end developer.
+          </TextHeading>
+          <TextWhite className="short-paragraph" data-aos="fade-right">
             Welcome to my portfolio! Here you can view my most recent projects
             and get to know me.
           </TextWhite>
         </InfoContainer>
         <ButtonContainer>
           <Link to="/About">
-            <PrimaryButton>About me</PrimaryButton>
+            <PrimaryButton data-aos="fade-right">About me</PrimaryButton>
           </Link>
           <Link to="/Projects">
-            <IconButton className="btn_two">
+            <IconButton className="btn_two" data-aos="fade-left">
               <CasesOutlinedIcon className="btn-icon" />
               All projects
             </IconButton>
           </Link>
         </ButtonContainer>
         <TextSubHeading className="sub-heading">Featured work</TextSubHeading>
-        <CardGridContainer>
-          {featuredData.map((ele) => {
-            return (
-              <Tilt
-                tiltEnable={false}
-                scale={1.02}
-                glareEnable={true}
-                glareMaxOpacity={0.2}
-                glareColor="lightblue"
-                glarePosition="all"
-                className="tilt-effect-project"
-              >
-                <Cards
-                  key={ele.id}
-                  id={ele.id}
-                  title={ele.title}
-                  desc={ele.shortDescription}
-                  src={ele.src}
-                ></Cards>
-              </Tilt>
-            );
-          })}
-        </CardGridContainer>
+        <Link to="/Specific/1" sx={{ textDecoration: "none" }}>
+          <FeatureCard />
+        </Link>
+
         <TextSubHeading className="sub-heading">Skills</TextSubHeading>
         <SkillsContainer>
           <Tilt
@@ -96,7 +87,7 @@ function Home() {
             glarePosition="all"
             className="tilt-effect"
           >
-            <SkillsCard>
+            <SkillsCard data-aos="fade-down">
               <div className="icon-container">
                 <FaReact className="skills-icon" />
               </div>
@@ -117,7 +108,7 @@ function Home() {
             glarePosition="all"
             className="tilt-effect"
           >
-            <SkillsCard>
+            <SkillsCard data-aos="fade-down">
               <div className="icon-container">
                 <JavascriptIcon className="skills-icon-small" />
               </div>
@@ -139,7 +130,7 @@ function Home() {
             glarePosition="all"
             className="tilt-effect"
           >
-            <SkillsCard>
+            <SkillsCard data-aos="fade-down">
               <div className="icon-container">
                 <SiStyledcomponents className="skills-icon" />
               </div>
@@ -160,7 +151,7 @@ function Home() {
             glarePosition="all"
             className="tilt-effect"
           >
-            <SkillsCard>
+            <SkillsCard data-aos="fade-down">
               <div className="icon-container">
                 <FaFigma className="skills-icon" />
               </div>
@@ -182,7 +173,7 @@ function Home() {
             glarePosition="all"
             className="tilt-effect"
           >
-            <SkillsCard>
+            <SkillsCard data-aos="fade-down">
               <div className="icon-container">
                 <SiMui className="skills-icon" />
               </div>
@@ -203,7 +194,7 @@ function Home() {
             glarePosition="all"
             className="tilt-effect"
           >
-            <SkillsCard>
+            <SkillsCard data-aos="fade-down">
               <div className="icon-container">
                 <FaBootstrap className="skills-icon" />
               </div>
