@@ -33,7 +33,7 @@ import kristiansand from "../../assets/images/holidaze/kristiansand.png";
 import rome from "../../assets/images/holidaze/rome.png";
 import sveits from "../../assets/images/holidaze/sveits.png";
 
-import mobileImg from "../../assets/images/holidaze/holidazeFormobile.png";
+import mobileImg from "../../assets/images/holidaze/holidazeForMobile.png";
 //tilt effect
 import Tilt from "react-parallax-tilt";
 import { useEffect } from "react";
