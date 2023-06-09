@@ -2,7 +2,7 @@ import styled from "styled-components";
 const ContactContent = styled.div`
   background-color: var(--dark-100);
   border-radius: 6px;
-
+  min-width: 320px;
   .tilt-effect-project {
     overflow: hidden;
     border-radius: 6px;
@@ -30,6 +30,10 @@ const ContactContent = styled.div`
   }
   .content-skills-card {
     margin-top: 10px;
+  }
+  .li-btn {
+    margin-top: 5px;
+    padding: 5px 10px;
   }
 `;
 const ContentWrapper = styled.div`

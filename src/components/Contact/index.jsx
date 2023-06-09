@@ -7,6 +7,8 @@ import { TextSkillsDark, TextSkillsWhite } from "../../styles/Text.styles";
 import Tilt from "react-parallax-tilt";
 //icons
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
+import { IconButton } from "../../styles/Button.styles";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Contact() {
   return (
     <WrapperContent>
@@ -14,11 +16,7 @@ function Contact() {
         <ContactContent>
           <Tilt
             tiltEnable={false}
-            scale={1.02}
-            glareEnable={true}
-            glareMaxOpacity={0.2}
-            glareColor="lightblue"
-            glarePosition="all"
+            glareEnable={false}
             className="tilt-effect-project"
           >
             <ContentWrapper>
@@ -27,7 +25,17 @@ function Contact() {
               </div>
               <div className="content-skills-card">
                 <TextSkillsWhite>Contact</TextSkillsWhite>
-                <TextSkillsDark>Please send me an email</TextSkillsDark>
+                <TextSkillsDark>Email: aud-and2@online.no</TextSkillsDark>
+                <TextSkillsDark>or send me a message on:</TextSkillsDark>
+                <a
+                  href="https://www.linkedin.com/in/audun-thompson-anderssen-79b3b3222/"
+                  target="_Blank"
+                >
+                  <IconButton className="li-btn">
+                    <LinkedInIcon className="btn-icon" />
+                    <TextSkillsWhite>LinkedIn</TextSkillsWhite>
+                  </IconButton>
+                </a>
               </div>
             </ContentWrapper>
           </Tilt>
