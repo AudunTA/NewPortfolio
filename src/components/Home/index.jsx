@@ -52,9 +52,7 @@ function Home() {
       <ContentContainer>
         <InfoContainer>
           <TextHeading data-aos="fade-down">Hey, I'm Audun.</TextHeading>
-          <TextHeading data-aos="fade-right">
-            Im a front-end developer.
-          </TextHeading>
+          <TextHeading data-aos="fade-right">Front-end developer.</TextHeading>
           <TextWhite className="short-paragraph" data-aos="fade-right">
             Welcome to my portfolio! Here you can view my most recent projects
             and get to know me.
