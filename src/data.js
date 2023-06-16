@@ -9,13 +9,13 @@ export const featuredData = [
     id: 1,
     title: "Holidaze",
     src: holidazeDesktopImage,
-    shortDescription: "a venue booking web application",
+    shortDescription: "A venue booking web application",
   },
   {
     id: 2,
     title: "ReactoTech",
     src: reactoTechImage,
-    shortDescription: "a mock ecommerce store",
+    shortDescription: "A mock ecommerce store",
   },
 ];
 
@@ -24,9 +24,9 @@ export const data = [
     id: 1,
     title: "Holidaze",
     src: holidazeDesktopImage,
-    shortDescription: "a venue booking web application",
+    shortDescription: "A venue booking web application",
     longDescription:
-      "This was my last exam project at Noroff. The project is built in react and showcase alot of what i learned during my font-end development studies at Noroff. Under the GitHub repository you can see all the features that this project have.",
+      "This was my last exam project at Noroff, and was graded A. The project is built in React and showcase alot of what i learned during my font-end development studies at Noroff. Under the GitHub repository you can see all the features that this project have.",
     techStack: [
       {
         name: "react",
@@ -43,9 +43,9 @@ export const data = [
     id: 2,
     title: "ReactoTech",
     src: reactoTechImage,
-    shortDescription: "a mock tech store",
+    shortDescription: "A mock tech store",
     longDescription:
-      "ReactoTech is an ecommerce store, that i built in react to strenghten my react skills. The application is connected to an API, and the user is able to sort, search, view product information, reviews and add to cart. Full description is under the github repository",
+      "ReactoTech is an ecommerce store, that i built in React to strenghten my react skills. The application is connected to an API, and the user is able to sort, search, view product information, reviews and add to cart. Full description is under the github repository",
     techStack: [
       {
         name: "react",
@@ -87,7 +87,7 @@ export const data = [
     src: adventureTrailsHike,
     shortDescription: "A hiking / tours web application",
     longDescription:
-      "This is Adventure Trails Hike, here i focues on writing better and clean HTML and CSS, and making components easy to globally change on all pages. slight use of JavaScript for the navigation",
+      "This is Adventure Trails Hike, here i focues on writing better and clean HTML and CSS, and making components easy to globally change on all pages. slight use of JavaScript for the navigation, This was my first exam at Noroff and was graded A.",
     techStack: [
       {
         name: "html",

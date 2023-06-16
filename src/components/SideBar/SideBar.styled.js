@@ -113,6 +113,7 @@ const AboutSection = styled.div`
   #img_avatar {
     width: 40px;
     height: 40px;
+    object-fit: cover;
     border-radius: 67%;
   }
   .group-info {
